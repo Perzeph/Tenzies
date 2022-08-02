@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    background-color: #ffffff;    
+    font-family: "Karla", sans-serif;
+  }
+
+  .mainHeader{
+    background-color: rgb(255, 255, 255);
+    border: solid 1px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+    "profile_img profileInfo";
+  }
+
+  .profile_img{
+    grid-area: profile_img; 
+    border-radius: 50%;
+    border: solid 3px;
+    margin: 15px;
+  }
+
+  .profileInfo{
+    grid-area: profileInfo; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .headerInfoContainer{
+    display: flex;
+    flex-direction: column;      
+    padding: 15px;
+    background-color: white;
+    width: fit-content;
+    max-width: 600px;
+  }
+
+  .flex{
+    display: flex;
+  }
+
+  .column{
+    flex-direction: column;
+  }
+
+  .profileName{
+    font-size: 45px;
+    font-weight: bold;
+  }
+
+  .profileDescription{
+    font-size: 25px;
+  }
+
+  .workTitle{
+    font-size: 30px;
+  }
+
+  .backgroundImage{
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .skillContainer{
+    display: flex;
+    margin: 10px;
+    border: solid 2px;
+    height: 60px;
+    padding: 0px 20px;
+    border-radius: 30px;
+  }
+
+  .skillImage{
+    height: 40px;
+    margin: auto 5px;
+  }
+
+  .skillName{
+    margin: auto auto auto 5px;
+    font-size: 30px;
+  }
+
+  .skillHeaderNameContainer{
+    display: flex;
+    padding: 10px;
+    background-color: black;
+  }
+
+  .SkillHeaderName{
+    margin: auto;
+    font-size: 30px;
+    color: white;
+  }
+
+  .skillSectonContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 270px);
+    grid-template-rows: auto;
+    width: 100%;
+    border-bottom: solid 2px;
+  }
+
+  .AppSectionContainer {
+    display: flex;    
+    margin-top: 10px;
+    border-bottom: solid 2px;   
+  }
+
+
+  .gitLinkImage{
+    height: 50px;
+    margin: 0px 10px;
+  }
+
+  .AppName{
+    font-size: 35px;
+    margin: auto 5px;
+  }
+
+  .AppDescription{
+    display: flex;
+    border-top: solid 1px gray;
+    margin-top: 5px;
+    height: 100%;
+  }
+
+  .AppDescriptionText{
+    font-size: 20px;
+    margin: auto 10px;
+    max-width: 800px;
+  }
+
+  .AppInfoContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .SiteNavBarContainer{
+    background-color: black;
+    border-bottom: solid 2px white;
+    border-top: solid 2px white;
+    height: 50px;
+    display: flex;
+  }
+
+  .SiteNavBarLink{
+    color: white;
+    font-size: 30px;
+    margin: auto 10px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .SiteNavBarLink:hover{
+    color: red;
+  }
+
+  .SiteNavBarImg{
+    margin: auto 10px;
+    cursor: pointer;
+    height: 35px;
+  }
+
+  .NavLinksContainer{
+    display: flex;
+    margin: auto;
+  }
+
+  .contactContainer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    border: solid 1px;
+    margin: 10px;    
+    align-items: center;
+    border-radius: 11px;
+  }
+
+  .contactElementContainer{
+    display: flex;
+  }
+
+  .contactImgIcon{
+    height: 60px;
+    margin: auto 5px;
+  }
+
+  
+  .contactItem{
+    margin: auto 10px;
+    font-size: 30px;
+  }
+
+  .educationSection{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .educationItemContainer{
+    display: flex;
+    border-bottom: solid 1px;
+  }
+
+  .educationImg{
+    height: 50px;
+    margin: 5px;
+  }
+
+  .educationText{
+    font-size: 30px;
+    margin: auto 5px;
+  }
+
+  .FooterContainer{
+    display: flex;
+    height: 100px;
+    background-color: black;
+    border-top: solid 10px white;
+  }
+
+  .footerInfoContainer{
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .footerText{
+    color: white;
+    margin: auto;
+    font-size: 23px;
+  }
+
+  .footerSocialContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media only screen
+ and (max-width: 800px)
+ {
+
+  .mainHeader{
+    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "profile_img" 
+    "profileInfo";
+  }
+
+  .profile_img{
+    grid-area: profile_img; 
+    border-radius: 50%;
+    height: 250px;
+    border: solid 3px;
+    margin: auto;
+  }
+
+    .headerInfoContainer{
+    margin: 4px auto;
+    padding: 5px;
+  }
+
+
+  
+
+
+ }
