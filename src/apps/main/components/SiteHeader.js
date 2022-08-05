@@ -17,7 +17,7 @@ export default function ResumeHeader() {
                 </div>
                 <div className="headerInfoContainer">
                     <span className="profileDescription">
-                        Welcome to my simple resume website built in React! Here you will find a copy of my actual <a href={resume} target='_blank'>resume</a>, and live apps with a description and GitHub link.
+                        Welcome to my simple resume website built in React! Here you will find a copy of my actual <a href={resume} target='_blank'>resume</a>, resume highlights, and live apps with a description and GitHub link. I have a background in business and am excited to bring my passion to the tech space!
                     </span>
                 </div>
             </div>

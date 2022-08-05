@@ -125,8 +125,7 @@
   .AppDescription{
     display: flex;
     border-top: solid 1px gray;
-    margin-top: 5px;
-    height: 100%;
+    margin-top: 5px;    
   }
 
   .AppDescriptionText{
